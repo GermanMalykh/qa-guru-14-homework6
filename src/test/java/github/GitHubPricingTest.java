@@ -18,5 +18,4 @@ public class GitHubPricingTest {
         //Find "Choose the plan..."
         $(".p-responsive h1.h2-mktg").shouldHave(text("Choose the plan that’s right for you."));
     }
-
 }
