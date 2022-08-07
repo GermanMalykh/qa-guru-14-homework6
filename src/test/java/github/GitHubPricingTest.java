@@ -13,7 +13,7 @@ public class GitHubPricingTest {
         //Open Github
         open("https://github.com");
         //Select Pricing -> Compare plans
-        $(".HeaderMenu ").$(byText("Pricing")).hover();
+        $(".HeaderMenu").$(byText("Pricing")).hover();
         $(byText("Compare plans")).click();
         //Find "Choose the plan..."
         $(".p-responsive h1.h2-mktg").shouldHave(text("Choose the plan that’s right for you."));
