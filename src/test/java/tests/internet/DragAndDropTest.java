@@ -1,6 +1,8 @@
 package tests.internet;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Condition.text;
@@ -10,6 +12,7 @@ public class DragAndDropTest {
 
     @BeforeAll
     static void configure() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
         Configuration.baseUrl = "https://the-internet.herokuapp.com";
     }
 
