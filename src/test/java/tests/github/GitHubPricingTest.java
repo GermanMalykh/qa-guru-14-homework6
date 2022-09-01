@@ -1,14 +1,17 @@
-package github;
+package tests.github;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import pages.GitHubElementsPage;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class GitHubPricingTest {
+
+    GitHubElementsPage gitHubElementsPage = new GitHubElementsPage();
 
     @BeforeAll
     static void configure() {

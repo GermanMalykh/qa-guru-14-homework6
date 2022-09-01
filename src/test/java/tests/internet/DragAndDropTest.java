@@ -1,4 +1,4 @@
-package internet;
+package tests.internet;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.*;
