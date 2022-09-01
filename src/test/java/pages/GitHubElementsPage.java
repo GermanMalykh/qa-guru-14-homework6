@@ -16,7 +16,6 @@ public class GitHubElementsPage {
             REPO_NAME = "GermanMalykh/qa-guru-14-homework6",
             ISSUES_NUM = "#1";
 
-
     private SelenideElement
             searchField = $(".header-search-input"),
             issuesTab = $("#issues-tab"),
