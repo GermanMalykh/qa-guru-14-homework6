@@ -11,9 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class GitHubPricingTest {
 
     @BeforeAll
-    static void configure() {
-        Configuration.browserSize = "1920x1080";
-    }
+    static void configure() { Configuration.browserSize = "1920x1080"; }
 
     @Test
     void comparePlans() {
