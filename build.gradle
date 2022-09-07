@@ -26,12 +26,6 @@ allure {
     }
 }
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(11)
-    }
-}
-
 dependencies {
     testImplementation(
             "com.codeborne:selenide:$selenideVersion",
