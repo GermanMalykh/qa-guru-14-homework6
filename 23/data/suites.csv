@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Sep 07 12:10:04 GMT 2022","Wed Sep 07 12:10:15 GMT 2022","10779","","tests.github.GitHubPricingTest","","tests.github.GitHubPricingTest","comparePlans","comparePlans()",""
+"passed","Wed Sep 07 12:09:39 GMT 2022","Wed Sep 07 12:09:47 GMT 2022","7625","","tests.github.GitHubCheckIssuesWithLambdaTest","","tests.github.GitHubCheckIssuesWithLambdaTest","testIssueSearch","testIssueSearch()",""
+"passed","Wed Sep 07 12:09:50 GMT 2022","Wed Sep 07 12:10:04 GMT 2022","14244","","tests.github.GitHubCheckIssuesWithStepsTest","","tests.github.GitHubCheckIssuesWithStepsTest","testIssueSearch","testIssueSearch()",""
+"passed","Wed Sep 07 12:09:47 GMT 2022","Wed Sep 07 12:09:50 GMT 2022","2769","","tests.github.GitHubCheckIssuesWithListenerTest","","tests.github.GitHubCheckIssuesWithListenerTest","testIssueSearch","testIssueSearch()",""
+"passed","Wed Sep 07 12:10:15 GMT 2022","Wed Sep 07 12:10:15 GMT 2022","584","","tests.internet.DragAndDropTest","","tests.internet.DragAndDropTest","rectangleSwap","rectangleSwap()",""
