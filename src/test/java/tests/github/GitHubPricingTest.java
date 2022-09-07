@@ -5,12 +5,15 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import pages.GitHubElementsPage;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class GitHubPricingTest {
+
+    GitHubElementsPage gitHubElementsPage = new GitHubElementsPage();
 
     @BeforeAll
     static void configure() {
@@ -20,12 +23,8 @@ public class GitHubPricingTest {
 
     @Test
     void comparePlans() {
-        //Open Github
-        open("https://github.com");
-        //Select Pricing -> Compare plans
-        $(".HeaderMenu").$(byText("Pricing")).hover();
-        $(byText("Compare plans")).click();
-        //Find "Get the complete..."
-        $(".p-responsive h1.h2-mktg").shouldHave(text("Get the complete developer platform."));
+        gitHubElementsPage.openPage();
+        gitHubElementsPage.selectPricingCompare();
+        gitHubElementsPage.headerCheck();
     }
 }

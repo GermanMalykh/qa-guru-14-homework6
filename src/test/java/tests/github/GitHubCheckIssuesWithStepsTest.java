@@ -6,7 +6,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
 import pages.GitHubElementsPage;
 
-public class GitHubCheckIssuesTest {
+public class GitHubCheckIssuesWithStepsTest {
 
     GitHubElementsPage gitHubElementsPage = new GitHubElementsPage();
 
