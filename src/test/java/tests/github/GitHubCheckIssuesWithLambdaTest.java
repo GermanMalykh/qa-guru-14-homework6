@@ -44,4 +44,5 @@ public class GitHubCheckIssuesWithLambdaTest {
             $(withText("#" + ISSUES_NUM)).should(Condition.exist);
         });
     }
+
 }
