@@ -23,6 +23,7 @@ public class GitHubCheckIssuesWithLambdaTest {
         Configuration.browserSize = "1920x1080";
     }
 
+    @DisplayName("Search repo with Lambda steps in test")
     @Test
     public void testIssueSearch() {
 

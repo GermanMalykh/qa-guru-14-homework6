@@ -18,6 +18,7 @@ public class GitHubCheckIssuesWithListenerTest {
         Configuration.browserSize = "1920x1080";
     }
 
+    @DisplayName("Search repo with Listener in test")
     @Test
     public void testIssueSearch() {
 

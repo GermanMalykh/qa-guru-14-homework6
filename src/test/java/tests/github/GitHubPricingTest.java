@@ -4,6 +4,7 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.GitHubElementsPage;
 
@@ -21,6 +22,7 @@ public class GitHubPricingTest {
         Configuration.browserSize = "1920x1080";
     }
 
+    @DisplayName("Pricing page check header")
     @Test
     void comparePlans() {
         gitHubElementsPage.openPage();

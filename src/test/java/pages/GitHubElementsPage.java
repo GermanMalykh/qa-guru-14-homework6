@@ -22,13 +22,12 @@ public class GitHubElementsPage {
             REPO_NAME = "GermanMalykh/qa-guru-14-homework6",
             ISSUES_NUM = "#1",
             PRICING_MENU = "Pricing",
-            PLANS_COMPARE = "Compare plans",
             PRICING_PAGE_H1_TEXT = "Get the complete developer platform.";
 
     private SelenideElement
             searchField = $(".header-search-input"),
             issuesTab = $("#issues-tab"),
-            menu = $(".HeaderMenu"),
+            menu = $(".HeaderMenu--logged-out"),
             headerPricingPage = $(".p-responsive h1.h2-mktg");
 
     @Step("Открываем главную страницу: " + PAGE_URL)
@@ -53,10 +52,9 @@ public class GitHubElementsPage {
         takeScreenshot();
     }
 
-    @Step("Выбираем в меню " + PRICING_MENU + "-->" + PLANS_COMPARE)
+    @Step("Выбираем в меню " + PRICING_MENU)
     public void selectPricingCompare() {
-        menu.$(byText(PRICING_MENU)).hover();
-        $(byText(PLANS_COMPARE)).click();
+        menu.$(byText(PRICING_MENU)).click();
     }
 
     @Step("Проверяем наличие заголовка " + PRICING_PAGE_H1_TEXT + " на странице")

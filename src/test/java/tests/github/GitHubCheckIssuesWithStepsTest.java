@@ -16,6 +16,7 @@ public class GitHubCheckIssuesWithStepsTest {
         Configuration.browserSize = "1920x1080";
     }
 
+    @DisplayName("Search repo with steps @Step")
     @Test
     public void testIssueSearch() {
         gitHubElementsPage.openPage();
